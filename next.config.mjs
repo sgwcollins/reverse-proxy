@@ -4,7 +4,8 @@ const nextConfig = {
     return [
       {
         source: "/v1/:path*",
-        destination: "https://reverse-proxy-orpin.vercel.app/v1/:path*",
+        destination: "https://staging-c-cdp-edge.cio.host/v1/:path*",
+        // destination: "http://localhost:3000/v1/:path*",
       },
     ];
   },
