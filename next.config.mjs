@@ -3,8 +3,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/ingest/:path*",
-        destination: "https://app.posthog.com/:path*",
+        source: "/v1/:path*",
+        destination: "https://reverse-proxy-orpin.vercel.app/v1/:path*",
       },
     ];
   },
